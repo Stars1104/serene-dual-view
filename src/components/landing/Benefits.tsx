@@ -1,14 +1,38 @@
 
-import { Check } from "lucide-react";
+import { MessageSquare, Shield, DollarSign, Heart, Eye, Star } from "lucide-react";
 
 export const Benefits = () => {
   const benefits = [
-    "Comunicação direta com marcas",
-    "Proteção de direitos autorais",
-    "Pagamentos seguros com PayPal",
-    "Acesso gratuito para influência de todos",
-    "Formatos de anúncios",
-    "Campanhas exclusivas"
+    {
+      icon: MessageSquare,
+      title: "Comunicação direta com marcas",
+      description: "Chat integrado para alinhar expectativas e tirar dúvidas diretamente com as marcas, sem intermediários."
+    },
+    {
+      icon: Shield,
+      title: "Proteção de direitos autorais",
+      description: "Contratos claros e transparentes que protegem seu trabalho e definem exatamente como seu conteúdo será utilizado."
+    },
+    {
+      icon: DollarSign,
+      title: "Pagamentos seguros com Pagar.me",
+      description: "Get paid on time, every time with our secure payment system"
+    },
+    {
+      icon: Heart,
+      title: "Acesso gratuito para alunos do curso",
+      description: "Alunos do curso UGC Pro têm acesso exclusivo à plataforma sem mensalidade por período estendido."
+    },
+    {
+      icon: Eye,
+      title: "Ferramentas de análise",
+      description: "Acompanhe seu desempenho, entenda quais conteúdos têm melhor aceitação e otimize seus resultados."
+    },
+    {
+      icon: Star,
+      title: "Comunidade exclusiva",
+      description: "Conecte-se com outros criadores, compartilhe experiências e cresça com networking de qualidade."
+    }
   ];
 
   return (
@@ -17,15 +41,19 @@ export const Benefits = () => {
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-foreground mb-12 md:mb-16">
           Benefícios da Plataforma
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-          {benefits.map((benefit, index) => (
-            <div key={index} className="flex items-center gap-4 p-4 rounded-lg hover:bg-background transition-colors">
-              <div className="w-8 h-8 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                <Check className="w-4 h-4 text-white" />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {benefits.map((benefit, index) => {
+            const IconComponent = benefit.icon;
+            return (
+              <div key={index} className="bg-background rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                  <IconComponent className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-3">{benefit.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
               </div>
-              <span className="text-foreground font-medium text-sm md:text-base">{benefit}</span>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
