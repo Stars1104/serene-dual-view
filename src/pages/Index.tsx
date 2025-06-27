@@ -67,7 +67,7 @@ const Index = () => {
   ];
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark bg-gray-900' : 'bg-white'}`}>
+    <div className={`min-h-screen transition-colors duration-300 bg-background text-foreground`}>
       {/* Header */}
       <header className="relative z-10 p-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
