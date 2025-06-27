@@ -6,6 +6,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
+import HeroRightImg from "@/assets/landing/hero-img.png";
+import WhyNexa from "@/assets/landing/why-nexa.png";
+
 const Index = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -93,7 +96,7 @@ const Index = () => {
           <div className="text-xl md:text-2xl font-bold text-foreground">
             NEXA
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" size="sm">Login</Button>
@@ -155,21 +158,8 @@ const Index = () => {
               </div>
             </div>
             <div className="relative order-first lg:order-last">
-              <div className="w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto bg-gradient-to-br from-pink-500 to-purple-600 rounded-3xl flex items-center justify-center">
-                <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-                  <div className="text-4xl sm:text-5xl lg:text-6xl">👩‍💻</div>
-                </div>
-              </div>
-              {/* Floating badges */}
-              <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 bg-white rounded-full p-2 sm:p-3 shadow-lg animate-bounce">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs sm:text-sm font-bold">💰</span>
-                </div>
-              </div>
-              <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 bg-white rounded-full p-2 sm:p-3 shadow-lg animate-pulse">
-                <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-orange-500 to-pink-500 rounded-full flex items-center justify-center">
-                  <span className="text-white text-xs sm:text-sm font-bold">📈</span>
-                </div>
+              <div className="w-[320px] h-72 sm:w-80 sm:h-80 lg:w-[430px] lg:h-96 mx-auto flex items-center justify-center">
+                <img src={HeroRightImg} alt="Hero-Image" className="w-full h-full" />
               </div>
             </div>
           </div>
@@ -181,10 +171,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative order-last lg:order-first">
-              <div className="w-full aspect-square max-w-md mx-auto bg-gradient-to-br from-orange-400 to-pink-500 rounded-3xl overflow-hidden">
-                <div className="w-full h-full bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                  <div className="text-6xl sm:text-7xl lg:text-8xl">📱</div>
-                </div>
+              <div className="w-full aspect-square max-w-md mx-auto rounded-3xl overflow-hidden">
+                <img src={WhyNexa} alt="" />
               </div>
             </div>
             <div className="space-y-4 md:space-y-6 text-center lg:text-left">
