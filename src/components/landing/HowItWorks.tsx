@@ -1,5 +1,4 @@
-
-import { Button } from "@/components/ui/button";
+import { Button } from "../ui/button";
 import { User, Eye, Image, DollarSign } from "lucide-react";
 
 export const HowItWorks = () => {
@@ -19,7 +18,7 @@ export const HowItWorks = () => {
     {
       step: "3",
       title: "Crie conteúdo autêntico",
-      description: "Produza conteúdo seguindo as orientações da marca, mas com seu estilo único.",
+      description: "Produza conteúdo seguindo as diretrizes da marca, mas com seu próprio estilo único.",
       icon: Image
     },
     {
@@ -31,11 +30,11 @@ export const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-background">
+    <section className="py-12 md:py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Como funciona o NEXA UGC
+            Como o NEXA UGC funciona
           </h2>
           <p className="text-base md:text-lg text-muted-foreground">
             Um processo simples para transformar sua criatividade em renda
@@ -45,7 +44,7 @@ export const HowItWorks = () => {
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             return (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center bg-background py-8 px-2 rounded-lg">
                 <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>

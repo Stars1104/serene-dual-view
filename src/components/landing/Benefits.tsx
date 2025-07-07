@@ -1,32 +1,31 @@
-
 import { MessageSquare, Shield, DollarSign, Heart, Eye, Star } from "lucide-react";
 
 export const Benefits = () => {
   const benefits = [
     {
       icon: MessageSquare,
-      title: "Comunicação direta com marcas",
-      description: "Chat integrado para alinhar expectativas e tirar dúvidas diretamente com as marcas, sem intermediários."
+      title: "Comunicação direta com as marcas.",
+      description: "Chat integrado para alinhar expectativas e responder perguntas diretamente com as marcas, sem intermediários."
     },
     {
       icon: Shield,
       title: "Proteção de direitos autorais",
-      description: "Contratos claros e transparentes que protegem seu trabalho e definem exatamente como seu conteúdo será utilizado."
+      description: "Contratos claros e transparentes que protegem seu trabalho e definem exatamente como seu conteúdo será usado."
     },
     {
       icon: DollarSign,
-      title: "Pagamentos seguros com Pagar.me",
-      description: "Get paid on time, every time with our secure payment system"
+      title: "Pagamentos seguros com o Pagar.me",
+      description: "Receba pagamentos em dia, sempre, com nosso sistema de pagamento seguro."
     },
     {
       icon: Heart,
       title: "Acesso gratuito para alunos do curso",
-      description: "Alunos do curso UGC Pro têm acesso exclusivo à plataforma sem mensalidade por período estendido."
+      description: "Alunos do curso UGC Pro têm acesso exclusivo à plataforma, sem mensalidade, por um período prolongado."
     },
     {
       icon: Eye,
       title: "Ferramentas de análise",
-      description: "Acompanhe seu desempenho, entenda quais conteúdos têm melhor aceitação e otimize seus resultados."
+      description: "Monitore seu desempenho, entenda qual conteúdo tem melhor aceitação e otimize seus resultados."
     },
     {
       icon: Star,

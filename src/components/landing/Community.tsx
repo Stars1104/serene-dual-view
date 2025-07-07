@@ -1,6 +1,5 @@
-
 import { Star } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "../ui/card";
 
 export const Community = () => {
   const testimonials = [
